@@ -24,7 +24,7 @@ import com.rso40.productservice.dto.ProductRequest;
 @AutoConfigureMockMvc
 class ProductServiceApplicationTests {
 
-	@Container
+	/*@Container
 	static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:3.2.4");
 	@Autowired
 	private MockMvc mockMvc;
@@ -54,6 +54,6 @@ class ProductServiceApplicationTests {
 			.description("Dunajski zrezek in pomfri.")
 			.price(BigDecimal.valueOf(5))
 			.build();
-	}
+	}*/
 
 }
