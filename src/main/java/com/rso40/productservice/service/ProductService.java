@@ -22,6 +22,8 @@ public class ProductService {
         Product product = Product.builder()
             .name(productRequest.getName())
             .description(productRequest.getDescription())
+            .restaurant(productRequest.getRestaurant())
+            .address(productRequest.getAddress())
             .price(productRequest.getPrice())
             .build();
 
@@ -42,6 +44,8 @@ public class ProductService {
             .id(product.getId())
             .name(product.getName())
             .description(product.getDescription())
+            .restaurant(product.getRestaurant())
+            .address(product.getAddress())
             .price(product.getPrice())
             .build();
     }

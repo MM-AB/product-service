@@ -14,6 +14,8 @@ public class ProductRequest {
 
     private String name;
     private String description;
+    private String restaurant;
+    private String address;
     private BigDecimal price;
     
 }
