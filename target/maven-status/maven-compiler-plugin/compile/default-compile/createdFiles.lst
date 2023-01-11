@@ -1,10 +1,10 @@
-com/rso40/productservice/dto/ProductRequest.class
 com/rso40/productservice/repository/ProductRepository.class
 com/rso40/productservice/service/ProductService.class
 com/rso40/productservice/model/Product$ProductBuilder.class
-com/rso40/productservice/model/Product.class
-com/rso40/productservice/dto/ProductResponse$ProductResponseBuilder.class
 com/rso40/productservice/ProductServiceApplication.class
 com/rso40/productservice/controller/ProductController.class
 com/rso40/productservice/dto/ProductRequest$ProductRequestBuilder.class
 com/rso40/productservice/dto/ProductResponse.class
+com/rso40/productservice/dto/ProductRequest.class
+com/rso40/productservice/model/Product.class
+com/rso40/productservice/dto/ProductResponse$ProductResponseBuilder.class
