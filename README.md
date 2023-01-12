@@ -33,7 +33,7 @@ docker run --name=mongo --rm --network=rsonetwork mongo
 
 Run app:
 ```bash
-docker run --name=productservice --rm --network=rsonetwork -p 8080:8080 -e MONGO_USER_URL=MONGO_URL=mongodb://mongo:27017/users productservice
+docker run --name=productservice --rm --network=rsonetwork -p 8080:8080 -e MONGO_PRODUCT_URL=MONGO_URL=mongodb://mongo:27017/products productservice
 ```
 
 ## Rename Docker image and push to repository
