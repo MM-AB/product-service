@@ -25,18 +25,15 @@ public class ProductController {
     private final ProductService productService;
     
     //End point
-    @PostMapping("/post-product")
+    @PostMapping("")
     @ResponseStatus(HttpStatus.CREATED)
-    public ModelAndView createProduct(ProductRequest productRequest){
-        System.out.println("Post mapping");
-        System.out.println(productRequest);
+    public void createProduct(@RequestBody  ProductRequest productRequest){
+        //System.out.println("Post mapping");
+        //System.out.println(productRequest);
         productService.createProduct(productRequest);
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("new-product");
-        return modelAndView;
     }
 
-    @GetMapping("")
+    /*@GetMapping("")
     @ResponseStatus(HttpStatus.OK)
     public ModelAndView getAllProd() {
         ModelAndView modelAndView = new ModelAndView();
@@ -44,21 +41,23 @@ public class ProductController {
         List<ProductResponse> listProducts = productService.getAllProducts();
         modelAndView.getModelMap().addAttribute("listProducts",listProducts);
         return modelAndView;
-    }
+    }*/
 
-    @GetMapping("/products")
+    @GetMapping("")
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse> getAllProducts(){
-        return productService.getAllProducts();
+        List <ProductResponse> products = productService.getAllProducts();
+        //System.out.println(products);
+        return products;//productService.getAllProducts();
     }
 
-    @GetMapping("/new-product")
+    /*@GetMapping("/new-product")
     public ModelAndView addNewProduct(ProductRequest productRequest){
         System.out.println("Get mapping");
         System.out.println(productRequest);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("new_product_form");
         return modelAndView;
-    }
+    }*/
 
 }
